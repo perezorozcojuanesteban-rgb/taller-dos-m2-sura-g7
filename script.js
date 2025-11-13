@@ -66,3 +66,26 @@ let aprobadas = notas.filter((nota) => nota >= 6);
 
 console.log(notas);
 console.log(aprobadas);
+
+/*  ## Ejercicio 4: Productos en Stock (filter con objetos)
+Inicias con un inventario:
+`let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {nombre: "Pantalón", stock: 5}];`
+
+Tareas:
+1.  Crea un nuevo arreglo `enStock` que contenga solo los productos cuyo `stock` sea mayor que 0.
+
+---
+   */
+
+let productos = [
+    { nombre: "Camisa", stock: 10 },
+    { nombre: "Zapatos", stock: 0 },
+    { nombre: "Pantalón", stock: 5 },
+];
+
+// Crea un nuevo arreglo `enStock` que contenga solo los productos cuyo `stock` sea mayor que 0.
+
+let enStock = productos.filter((productos) => productos.stock > 0);
+
+console.log(productos);
+console.log(enStock);
