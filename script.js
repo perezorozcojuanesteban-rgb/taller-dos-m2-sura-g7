@@ -47,3 +47,22 @@ let nombres = usuarios.map((usuario) => {
 
 console.log(usuarios);
 console.log(nombres);
+
+/*   ## Ejercicio 3: Notas Aprobadas (filter)
+Inicias con una lista de calificaciones:
+`let notas = [8, 5, 10, 3, 7];`
+
+Tareas:
+1.  Crea un nuevo arreglo `aprobadas` que contenga solo las notas que sean mayores o iguales a 6.
+
+---
+  */
+
+let notas = [8, 5, 10, 3, 7];
+
+// Crea un nuevo arreglo `aprobadas` que contenga solo las notas que sean mayores o iguales a 6.
+
+let aprobadas = notas.filter((nota) => nota >= 6);
+
+console.log(notas);
+console.log(aprobadas);
