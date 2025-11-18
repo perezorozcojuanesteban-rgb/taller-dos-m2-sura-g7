@@ -159,3 +159,22 @@ clon.push("D")
 
 console.log(original)
 console.log(clon)
+
+/*   ## Ejercicio 8: Obtener el Podio (slice)
+Inicias con una lista de competidores:
+`let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];`
+
+Tareas:
+1.  Crea un nuevo arreglo `podio` que contenga solo los primeros 3 elementos (Oro, Plata, Bronce).
+
+---
+   */
+
+let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
+
+// Crea un nuevo arreglo `podio` que contenga solo los primeros 3 elementos (Oro, Plata, Bronce).
+
+let podio = competidores.slice(0, 3)
+
+console.log(competidores)
+console.log(podio);
