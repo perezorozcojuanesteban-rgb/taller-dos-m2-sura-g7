@@ -178,3 +178,23 @@ let podio = competidores.slice(0, 3)
 
 console.log(competidores)
 console.log(podio);
+
+/*  ## Ejercicio 9: Unir Equipos (concat)
+Inicias con dos listas:
+`let equipoDev = ["Ana", "Juan"];`
+`let equipoQA = ["Carlos", "Maria"];`
+
+Tareas:
+1.  Crea un nuevo arreglo `equipoCompleto` que sea la unión de `equipoDev` y `equipoQA`.
+
+---   */
+
+let equipoDev = ["Ana", "Juan"];
+
+let equipoQA = ["Carlos", "Maria"];
+
+// Crea un nuevo arreglo `equipoCompleto` que sea la unión de `equipoDev` y `equipoQA`.
+
+let equipoCompleto = equipoDev.concat(equipoQA)
+
+console.log(equipoCompleto);
