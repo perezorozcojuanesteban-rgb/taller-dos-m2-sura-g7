@@ -135,3 +135,27 @@ let listaPlana = grupos.reduce(function(acumulador, grupo) {
 
 console.log(grupos);
 console.log(listaPlana);
+
+/*   ## Ejercicio 7: Crear una Copia (slice)
+Inicias con un arreglo:
+`let original = ["A", "B", "C"];`
+
+Tareas:
+1.  Crea un `clon` exacto del arreglo `original` usando `slice()`.
+2.  (Verificación) Modifica el `clon` (ej. `clon.push("D")`) y demuestra que `original` sigue intacto.
+
+---
+   */
+
+let original = ["A", "B", "C"];
+
+// Crea un `clon` exacto del arreglo `original` usando `slice()`.
+
+let clon = original.slice()
+
+// (Verificación) Modifica el `clon` (ej. `clon.push("D")`) y demuestra que `original` sigue intacto.
+
+clon.push("D")
+
+console.log(original)
+console.log(clon)
