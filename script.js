@@ -220,3 +220,28 @@ let nuevoCarrito = carrito.concat("Pera")
 
 console.log(carrito);
 console.log(nuevoCarrito);
+
+
+/*   ## Ejercicio 11: Verificar Permiso (includes)
+Inicias con los roles de un usuario:
+`let roles = ["USER", "EDITOR"];`
+
+Tareas:
+1.  Verifica si el usuario tiene el rol "ADMIN". (El resultado debe ser `false`).
+2.  Verifica si el usuario tiene el rol "EDITOR". (El resultado debe ser `true`).
+
+---   */
+
+let roles = ["USER", "EDITOR"];
+
+// Verifica si el usuario tiene el rol "ADMIN". (El resultado debe ser `false`).
+
+let rolUsuario = roles.includes("ADMIN")
+
+//  Verifica si el usuario tiene el rol "EDITOR". (El resultado debe ser `true`).
+
+let rolEditor = roles.includes("EDITOR")
+
+console.log(roles);
+console.log(rolUsuario);
+console.log(rolEditor);
