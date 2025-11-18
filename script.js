@@ -33,7 +33,7 @@ Tareas:
 --- 
  */
 
-let usuarios = [
+let usuarioss = [
     { id: 1, nombre: "Ana" },
     { id: 2, nombre: "Luis" },
     { id: 3, nombre: "Carlos" },
@@ -41,11 +41,11 @@ let usuarios = [
 
 // Crea un nuevo arreglo `nombres` que contenga solo los nombres de los usuarios (ej: `["Ana", "Luis", "Carlos"]`).
 
-let nombres = usuarios.map((usuario) => {
+let nombres = usuarioss.map((usuario) => {
     return usuario.nombre;
 });
 
-console.log(usuarios);
+console.log(usuarioss);
 console.log(nombres);
 
 /*   ## Ejercicio 3: Notas Aprobadas (filter)
@@ -245,3 +245,29 @@ let rolEditor = roles.includes("EDITOR")
 console.log(roles);
 console.log(rolUsuario);
 console.log(rolEditor);
+
+
+/*   ## Ejercicio 12: Encontrar Usuario (find)
+Inicias con la lista de usuarios:
+`let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];`
+
+Tareas:
+1.  Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.
+
+--- */
+
+
+let usuarios = [
+    { id: 101, nombre: "Ana" },
+    { id: 102, nombre: "Luis" },
+    { id: 103, nombre: "Carlos" }
+];
+
+// Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.
+
+let usuarioLuis = usuarios.find(function(usuario) {
+    return usuario.id === 102;
+});
+
+
+console.log(usuarioLuis);
