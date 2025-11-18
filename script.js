@@ -111,3 +111,27 @@ let totalVentas = ventas.reduce((acumulador, venta) => {
 
 console.log(ventas);
 console.log(totalVentas);
+
+/*   ## Ejercicio 6: Aplanar un Arreglo (reduce)
+Inicias con una lista de listas:
+`let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];`
+
+Tareas:
+1.  Crea un nuevo arreglo `listaPlana` que contenga todos los nombres en un solo nivel (ej: `["Ana", "Luis", "Maria", "Juan", "Pedro"]`). (Pista: `reduce` puede usar `concat`).
+
+---   */
+
+let grupos = [
+    ["Ana", "Luis"],
+    ["Maria", "Juan"],
+    ["Pedro"]
+];
+
+// Crea un nuevo arreglo `listaPlana` que contenga todos los nombres en un solo nivel (ej: `["Ana", "Luis", "Maria", "Juan", "Pedro"]`). (Pista: `reduce` puede usar `concat`).
+
+let listaPlana = grupos.reduce(function(acumulador, grupo) {
+    return acumulador.concat(grupo);
+}, []);
+
+console.log(grupos);
+console.log(listaPlana);
