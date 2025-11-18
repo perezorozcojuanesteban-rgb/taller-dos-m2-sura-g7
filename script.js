@@ -89,3 +89,25 @@ let enStock = productos.filter((productos) => productos.stock > 0);
 
 console.log(productos);
 console.log(enStock);
+
+/*  ## Ejercicio 5: Suma Total de Ventas (reduce)
+Inicias con una lista de ventas del día:
+`let ventas = [150, 300, 100, 50];`
+
+Tareas:
+1.  Calcula el valor `totalVentas` sumando todos los elementos del arreglo usando `reduce`.
+
+---
+
+*/
+
+let ventas = [150, 300, 100, 50];
+
+// Calcula el valor `totalVentas` sumando todos los elementos del arreglo usando `reduce`.
+
+let totalVentas = ventas.reduce((acumulador, venta) => {
+    return acumulador + venta;
+}, 0);
+
+console.log(ventas);
+console.log(totalVentas);
