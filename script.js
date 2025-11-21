@@ -317,3 +317,25 @@ let recetaInversa = [...receta].reverse();
 
 console.log(receta);
 console.log(recetaInversa);
+
+/*   ## Ejercicio 15: Eliminar sin Mutar (filter)
+Inicias con una fila:
+`let fila = ["Ana", "Luis", "Carlos", "Maria"];`
+
+Tareas:
+1.  "Luis" (índice 1) se va. Crea una `nuevaFila` sin Luis, usando `filter()`. (Pista: filtra por índice o por nombre).
+2.  Verifica que `fila` original sigue teniendo a "Luis".
+
+---
+  */
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+
+// "Luis" (índice 1) se va. Crea una `nuevaFila` sin Luis, usando `filter()`. (Pista: filtra por índice o por nombre).
+
+let nuevaFila = fila.filter((persona) => persona != "Luis")
+
+// Verifica que `fila` original sigue teniendo a "Luis".
+
+console.log(fila);
+console.log(nuevaFila);
