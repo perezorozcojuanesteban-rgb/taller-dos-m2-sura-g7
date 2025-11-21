@@ -329,13 +329,41 @@ Tareas:
 ---
   */
 
-let fila = ["Ana", "Luis", "Carlos", "Maria"];
+let filas = ["Ana", "Luis", "Carlos", "Maria"];
 
 // "Luis" (índice 1) se va. Crea una `nuevaFila` sin Luis, usando `filter()`. (Pista: filtra por índice o por nombre).
 
-let nuevaFila = fila.filter((persona) => persona != "Luis")
+let nuevaFila = filas.filter((persona) => persona != "Luis")
 
 // Verifica que `fila` original sigue teniendo a "Luis".
 
-console.log(fila);
+console.log(filas);
 console.log(nuevaFila);
+
+/*   
+
+## Ejercicio 16: Insertar sin Mutar (slice + spread)
+Inicias con la misma fila:
+`let fila = ["Ana", "Luis", "Carlos", "Maria"];`
+
+Tareas:
+1.  "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* 
+(`...`) para insertarlo.
+2.  (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
+3.  Verifica que `fila` original no tiene a "Jorge".
+
+--- 
+
+*/
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+
+// "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* (`...`) para insertarlo.
+// (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
+
+let nuevaFilaConJorge = [...fila.slice(0, 1), "Jorge", ...fila.slice(1)];
+
+// Verifica que `fila` original no tiene a "Jorge".
+
+console.log(fila);
+console.log(nuevaFilaConJorge);
