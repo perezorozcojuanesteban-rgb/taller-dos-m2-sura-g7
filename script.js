@@ -418,3 +418,23 @@ let productosCaros = productoss.filter((producto) => producto.precio > 4).map((p
 
 console.log(productoss);
 console.log(productosCaros);
+
+/*  ## Ejercicio 19: Añadir al Inicio (concat o spread)
+Inicias con un feed de noticias:
+`let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];`
+
+Tareas:
+1.  Crea un `nuevoFeed` donde "Noticia Urgente" esté al inicio, seguida de las noticias del `feed` original. (Pista: `["Noticia Urgente"].concat(feed)` o `["Noticia Urgente", ...feed]`).
+
+---
+  */
+
+let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+
+//  Crea un `nuevoFeed` donde "Noticia Urgente" esté al inicio, seguida de las noticias del `feed` original. 
+// (Pista: `["Noticia Urgente"].concat(feed)` o `["Noticia Urgente", ...feed]`).
+
+let nuevoFeed = ["Noticia Urgente"].concat(feed);
+
+console.log(feed);
+console.log(nuevoFeed);
