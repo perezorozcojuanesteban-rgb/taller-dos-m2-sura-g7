@@ -367,3 +367,32 @@ let nuevaFilaConJorge = [...fila.slice(0, 1), "Jorge", ...fila.slice(1)];
 
 console.log(fila);
 console.log(nuevaFilaConJorge);
+
+
+/*  ## Ejercicio 17: Reemplazar sin Mutar (map)
+Inicias con el estado de un tablero:
+`let tablero = ["X", "O", "X"];`
+
+Tareas:
+1.  El jugador "O" (índice 1) comete un error y debe ser "X". Crea un `nuevoTablero` usando `map()` para cambiar el valor en ese índice.
+2.  Verifica que `tablero` original sigue teniendo "O" en el medio.
+
+---
+   */
+
+let tablero = ["X", "O", "X"]
+
+// El jugador "O" (índice 1) comete un error y debe ser "X".
+// Crea un `nuevoTablero` usando `map()` para cambiar el valor en ese índice.
+
+let nuevoTablero = tablero.map((valor, index) => {
+    if (index === 1) {
+        return "X";
+    }
+    return valor;
+});
+
+// Verifica que `tablero` original sigue teniendo "O" en el medio.
+
+console.log(tablero);
+console.log(nuevoTablero);
