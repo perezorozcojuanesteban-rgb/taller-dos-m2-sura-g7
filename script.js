@@ -294,3 +294,26 @@ let invitadosOrdenados = [...invitados].sort();
 
 console.log(invitados);
 console.log(invitadosOrdenados);
+
+/*   ## Ejercicio 14: Invertir sin Mutar (Copia + reverse)
+Inicias con los pasos de una receta:
+`let receta = ["Paso 1", "Paso 2", "Paso 3"];`
+
+Tareas:
+1.  Crea un nuevo arreglo `recetaInversa`. (Pista: `[...receta].reverse()`).
+2.  Verifica que `receta` sigue en el orden original.
+
+---
+   */
+
+let receta = ["Paso 1", "Paso 2", "Paso 3"];
+
+
+// Crea un nuevo arreglo `recetaInversa`. (Pista: `[...receta].reverse()`).
+
+let recetaInversa = [...receta].reverse();
+
+// Verifica que `receta` sigue en el orden original.
+
+console.log(receta);
+console.log(recetaInversa);
