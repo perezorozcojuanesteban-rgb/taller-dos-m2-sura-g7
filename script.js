@@ -438,3 +438,33 @@ let nuevoFeed = ["Noticia Urgente"].concat(feed);
 
 console.log(feed);
 console.log(nuevoFeed);
+
+
+/*    ## Ejercicio 20: Desafío de Puntuación (Combinado)
+Inicias con las puntuaciones de un juego:
+`let puntuaciones = [50, 85, -10, 100, 0, 30];`
+
+Tareas (encadenadas):
+1.  Crea un arreglo `validas` filtrando las puntuaciones que no sean negativas (`>= 0`).
+2.  Usando `validas`, crea un arreglo `bonificadas` donde cada puntuación válida se incrementa en 10 puntos (`map`).
+3.  Usando `bonificadas`, calcula el `totalPuntos` (`reduce`).   */
+
+
+let puntuaciones = [50, 85, -10, 100, 0, 30];
+
+// Crea un arreglo `validas` filtrando las puntuaciones que no sean negativas (`>= 0`).
+
+let validas = puntuaciones.filter((p) => p >= 0);
+
+// Usando `validas`, crea un arreglo `bonificadas` donde cada puntuación válida se incrementa en 10 puntos (`map`).
+
+let bonificadas = validas.map((p) => p + 10);
+
+// Usando `bonificadas`, calcula el `totalPuntos` (`reduce`).  
+
+let totalPuntos = bonificadas.reduce((acum, p) => acum + p, 0);
+
+console.log(puntuaciones);
+console.log(validas);
+console.log(bonificadas);
+console.log(totalPuntos);
